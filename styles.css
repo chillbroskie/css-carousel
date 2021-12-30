@@ -1,12 +1,13 @@
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
 }
 
-.carousel{
+.carousel {
   width: 100vh;
   height: 100vh;
   position: relative;
@@ -16,12 +17,11 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 /* transition trick with carousel delay */
 
-.slide{
+.slide {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -37,13 +37,13 @@ body{
   object-position: center;
 }
 
-.slide[data-active]{
+.slide[data-active] {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
 
-.carousel-button{
+.carousel-button {
   position: absolute;
   z-index: 2;
   background: none;
@@ -51,17 +51,17 @@ body{
   font-size: 4rem;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
-  border-radius: .25rem;
-  padding: 0 .5rem;
-  background-color: rgba(0, 0, 0, .1);
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .carousel-button:hover,
 .carousel-button:focus {
   color: white;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .carousel-button:focus {
@@ -72,6 +72,6 @@ body{
   left: 1rem;
 }
 
-.carousel-button.next{
+.carousel-button.next {
   right: 1rem;
 }
